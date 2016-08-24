@@ -13,10 +13,11 @@
   .zgallery h1 {
     display: inline-block;
     width: 330px;
-    font-size: 2.75em;
-    margin: 0; } }
+    font-size: 2.75em; } }
 
 @media only screen and (min-width: 500px) and (max-width: 1200px) {
+  .zgallery .innerwrap {
+    height: 700px; }
   .zgallery .info .contcent {
     display: block;
     width: 100%;
@@ -26,15 +27,17 @@
     .zgallery .mpadtop li {
       font-size: 1.5em; }
   .zgallery h1 {
+    max-height: 96px;
     display: inline-block;
     width: 500px;
-    font-size: 3em;
-    margin: 0; } }
+    font-size: 3em; } }
 
 @media only screen and (min-width: 1201px) {
+  .zgallery .innerwrap {
+    height: 600px; }
   .zgallery h1 {
-    font-size: 4em;
-    margin: 0; } }
+    max-height: 154px;
+    font-size: 4em; } }
 
 .zgallery {
   position: relative;
@@ -54,6 +57,9 @@
     /* Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */ }
+  .zgallery h1 {
+    margin: 0;
+    overflow-y: auto; }
   .zgallery ul {
     padding: 0;
     margin: 0;
@@ -96,12 +102,12 @@
     vertical-align: middle; }
   .zgallery .innerwrap {
     width: 6000px;
-    max-height: 600px;
     overflow: hidden; }
   .zgallery .content {
     display: inline-block;
     width: 1000px;
     margin-right: 1000px;
+    padding-top: 100px;
     float: left; }
   .zgallery .chev {
     display: table-cell;
@@ -138,7 +144,7 @@
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background-image 1s ease-in-out; }
+    transition: background-image 0.3s ease-in-out; }
   .zgallery .backimg img, .zgallery .blur img {
     position: fixed;
     visibility: hidden;
