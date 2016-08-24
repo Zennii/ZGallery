@@ -1,5 +1,8 @@
 @media only screen and (max-width: 499px) {
     .zgallery {
+        .innerwrap {
+            height: 600px;
+        }
         .info {
             .contcent {
                 display: block;
@@ -21,8 +24,12 @@
         h1 {
             display: inline-block;
             width: 330px;
-            max-height: 126px;
-            font-size: 2.75em;
+            max-height: 100px;
+            font-size: 2.2em;
+        }
+        ul {
+            height: 71px;
+            font-size: 1em;
         }
     }
 }
@@ -52,6 +59,10 @@
             max-height: 96px;
             font-size: 3em;
         }
+        ul {
+            height: 125px;
+            font-size: 1.25em;
+        }
     }
 }
 
@@ -63,6 +74,10 @@
         h1 {
             max-height: 154px;
             font-size: 4em;
+        }
+        ul {
+            height: 125px;
+            font-size: 1.25em;
         }
     }
 }
@@ -94,8 +109,6 @@
         padding: 0;
         margin: 0;
         list-style: none;
-        font-size: 1.25em;
-        height: 125px;
         overflow: auto;
     }
     

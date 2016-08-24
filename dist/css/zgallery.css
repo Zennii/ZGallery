@@ -1,4 +1,6 @@
 @media only screen and (max-width: 499px) {
+  .zgallery .innerwrap {
+    height: 600px; }
   .zgallery .info .contcent {
     display: block;
     width: 100%;
@@ -13,8 +15,11 @@
   .zgallery h1 {
     display: inline-block;
     width: 330px;
-    max-height: 126px;
-    font-size: 2.75em; } }
+    max-height: 100px;
+    font-size: 2.2em; }
+  .zgallery ul {
+    height: 71px;
+    font-size: 1em; } }
 
 @media only screen and (min-width: 500px) and (max-width: 1200px) {
   .zgallery .innerwrap {
@@ -31,14 +36,20 @@
     display: inline-block;
     width: 500px;
     max-height: 96px;
-    font-size: 3em; } }
+    font-size: 3em; }
+  .zgallery ul {
+    height: 125px;
+    font-size: 1.25em; } }
 
 @media only screen and (min-width: 1201px) {
   .zgallery .innerwrap {
     height: 600px; }
   .zgallery h1 {
     max-height: 154px;
-    font-size: 4em; } }
+    font-size: 4em; }
+  .zgallery ul {
+    height: 125px;
+    font-size: 1.25em; } }
 
 .zgallery {
   position: relative;
@@ -65,8 +76,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: 1.25em;
-    height: 125px;
     overflow: auto; }
   .zgallery li:before {
     content: '\2022';
