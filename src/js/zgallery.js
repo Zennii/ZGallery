@@ -144,11 +144,11 @@ ZGallery.prototype = {
             }
         });
         
-        /* Center the backgrounds after a delay. Seems to be affected by load time for some reason, even with the script at the end... */
+        /* Center the backgrounds after a delay. Seems to be affected by load time for some reason, even with this at the end... */
         setTimeout(function(){
             that.hcenters = document.querySelectorAll(that.zid+" .zg\\-hcenter");
             that.center();
-        }, 52);
+        }, 60);
     },
     /* prototype.center
      *
